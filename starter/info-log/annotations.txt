@@ -1,0 +1,14 @@
+
+** ADVANCED CSS AND 
+
+**CSS Animation:
+
+@keyframes  and   animations properties.
+
+** TO ANIMATE BUTTON:
+
+* I can use the pseudo element ::after
+* Use the same properties to it.
+* Positionate it using position relative and absolute
+* z-index: -1 to send it back to the button.
+
