@@ -12,3 +12,17 @@
 * Positionate it using position relative and absolute
 * z-index: -1 to send it back to the button.
 
+** WORKING WITH SASS **********************
+https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275
+
+* npm install node-sass 
+* In package.json write a script:
+"scripts": {
+  "scss": "node-sass --watch scss/main.scss css/style.css"
+}
+
+This will render the SASS into the css file style.css.
+then write in console:  'npm run scss'
+
+install globaly =>  'npm install live-server -g'
+run => 'live-server'
