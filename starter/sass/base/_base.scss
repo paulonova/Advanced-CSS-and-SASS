@@ -1,0 +1,25 @@
+
+/*Global reset*/
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  /* Calculate 10/16 = 0.625 or 62.5% 
+  now 1rem = 62.5% or 10px */
+  font-size: 62.5%;  
+}
+
+/*To be used in inheritence*/
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+  padding: 3rem;
+  box-sizing: border-box;
+}
