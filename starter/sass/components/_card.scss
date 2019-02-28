@@ -18,20 +18,20 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     backface-visibility: hidden;
 
-    &--front{      
+    // &--front{      
 
-      &-1{
-        background-color: $color-secondary-light;
-      }
+    //   &-1{
+    //     background-color: $color-secondary-light;
+    //   }
 
-      &-2{
-        // background-color: $color-primary-light;
-      }
+    //   &-2{
+    //     // background-color: $color-primary-light;
+    //   }
 
-      &-3{
-        // background-color: $color-tertiary-light;
-      }
-    }
+    //   &-3{
+    //     // background-color: $color-tertiary-light;
+    //   }
+    // }
 
     &--back{      
       transform: rotateY(180deg);
@@ -66,6 +66,8 @@
     background-blend-mode: screen;    
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1{
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg') ;
@@ -122,7 +124,7 @@
 
     ul{
       list-style: none;
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
 
       li{
@@ -135,6 +137,30 @@
         }
       }
     }
+  }
+
+  &__cta{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-box{
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only{
+
+  }
+
+  &__price-value{
+    font-size: 6rem;
+    font-weight: 200;
   }
 
 }
