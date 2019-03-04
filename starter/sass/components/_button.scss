@@ -2,7 +2,7 @@
 /*BUTTONS*/
 
 .btn{
-
+  &, // translate to <button> element, not only to <a>
   &:link,  /*selector is used to select unvisited links.*/
   &:visited{
   font-size: 1.6rem;
@@ -13,6 +13,10 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 10rem;
+
+  //Change for <button> element
+  border: none;
+  cursor: pointer;
   }
 
   &:hover{
@@ -24,7 +28,9 @@
     } 
   }
   
-  &:active{
+  &:active,
+  &:focus{
+    outline: none;
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);/*click event*/ 
   }
