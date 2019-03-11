@@ -27,34 +27,37 @@ https://bennettfeely.com/clippy/
 
 
 
-<h3>Project´s annotations</h3>
+<h1>Project´s annotations</h1>
 
 
 
-** ADVANCED CSS AND 
+<h3>ADVANCED CSS AND</h3>
 
-**CSS Animation:
+<h4>CSS Animation:</h4>
 
-@keyframes  and   animations properties.
+<p>@keyframes  and   animations properties.</p>
 
 ** TO ANIMATE BUTTON:
 
-* I can use the pseudo element ::after
-* Use the same properties to it.
-* Positionate it using position relative and absolute
-* z-index: -1 to send it back to the button.
+<ul>
+  <li>* I can use the pseudo element ::after</li>
+  <li>* Use the same properties to it.</li>
+  <li>* Positionate it using position relative and absolute</li>
+  <li>* z-index: -1 to send it back to the button.</li>
+</ul>
 
 
+<h3>WORKING WITH SASS</h3>
 
-** WORKING WITH SASS **********************
-*******************************************
-https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275
+<a href="https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275">SASS in 5 steps</a>
 
-* npm install node-sass --save-dev
-* In package.json write a script:
-"scripts": {
+<p>* npm install node-sass --save-dev</p>
+<p>*In package.json write a script:</p>
+<code>
+  "scripts": {
   "scss": "node-sass --watch scss/main.scss css/style.css"
 }
+</code>
 
 This will render the SASS into the css file style.css.
 then write in console:  'npm run scss'
