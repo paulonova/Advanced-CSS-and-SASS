@@ -59,8 +59,8 @@ https://bennettfeely.com/clippy/
 }
 </code>
 
-This will render the SASS into the css file style.css.
-then write in console:  'npm run scss'
+<p>This will render the SASS into the css file style.css.</p>
+<p>then write in console:  'npm run scss'</p>
 
 install globaly =>  'npm install live-server -g'
 run => 'live-server'
@@ -76,7 +76,7 @@ ex: .col-3-of-4{
 
   'u-center-text', 'u-margin-bottom-8' etc..
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<div style="color:red;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
 
 ** RESPONSIVE DESIGN 
 
