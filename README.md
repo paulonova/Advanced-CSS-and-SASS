@@ -12,3 +12,83 @@ http://codingheroes.io/resources/
 <h2>CREATE SHAPES WITH IMAGES</h2>
 https://bennettfeely.com/clippy/
 
+
+<h2>animation-timing-function</h2>
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
+<h2>Linea: a free outline iconset</h2>
+http://linea.io/
+
+<h2>CODEPEN Grid Sass</h2>
+https://codepen.io/paulonova/pen/NJPNWV
+
+<h2>CSS clip-path maker</h2>
+https://bennettfeely.com/clippy/
+
+
+
+<h3>Project´s annotations</h3>
+
+
+
+** ADVANCED CSS AND 
+
+**CSS Animation:
+
+@keyframes  and   animations properties.
+
+** TO ANIMATE BUTTON:
+
+* I can use the pseudo element ::after
+* Use the same properties to it.
+* Positionate it using position relative and absolute
+* z-index: -1 to send it back to the button.
+
+
+
+** WORKING WITH SASS **********************
+*******************************************
+https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275
+
+* npm install node-sass --save-dev
+* In package.json write a script:
+"scripts": {
+  "scss": "node-sass --watch scss/main.scss css/style.css"
+}
+
+This will render the SASS into the css file style.css.
+then write in console:  'npm run scss'
+
+install globaly =>  'npm install live-server -g'
+run => 'live-server'
+
+** GRIDS: ****
+I create grids using calc().
+ex: .col-3-of-4{
+    width: calc(3 * ((100% - 3*#{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
+  }
+  
+  ** UTILITIES CLASSES ****
+  I created some utilities classes to help with some small tasks.
+
+  'u-center-text', 'u-margin-bottom-8' etc..
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** RESPONSIVE DESIGN 
+
+1- Desktop-first
+2- Mobile-first
+
+Screen Sizes:
+
+'max-width:' usses to desktop-first
+'min-width:' uses to mobile-first
+
+1 for mobile                      0 to 600 px
+1 for portrait tablets            600 to 900 px
+1 for landscape tablets           900 to 1200 px
+1 for desktop                     1200 to 1800 px
+1 for big desktop                 1800 to ->
+
+ps: That can be more, but these are the basics.

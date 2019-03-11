@@ -41,4 +41,24 @@ ex: .col-3-of-4{
 
   'u-center-text', 'u-margin-bottom-8' etc..
 
-  
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** RESPONSIVE DESIGN 
+
+1- Desktop-first
+2- Mobile-first
+
+Screen Sizes:
+
+'max-width:' usses to desktop-first
+'min-width:' uses to mobile-first
+
+1 for mobile                      0 to 600 px
+1 for portrait tablets            600 to 900 px
+1 for landscape tablets           900 to 1200 px
+1 for desktop                     1200 to 1800 px
+1 for big desktop                 1800 to ->
+
+ps: That can be more, but these are the basics.
+
+
