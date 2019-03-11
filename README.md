@@ -62,31 +62,33 @@ https://bennettfeely.com/clippy/
 <p>This will render the SASS into the css file style.css.</p>
 <p>then write in console:  'npm run scss'</p>
 
-install globaly =>  'npm install live-server -g'
-run => 'live-server'
+# install globaly =>  'npm install live-server -g'
+# run => 'live-server'
 
-** GRIDS: ****
-I create grids using calc().
-ex: .col-3-of-4{
+<h1>GRIDS:</h1>
+
+<p>I create grids using calc().</p>
+<code>ex: .col-3-of-4{
     width: calc(3 * ((100% - 3*#{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
   }
+</code>
   
   ** UTILITIES CLASSES ****
   I created some utilities classes to help with some small tasks.
 
   'u-center-text', 'u-margin-bottom-8' etc..
 
-<div style="color:red;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+<strong>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</strong>
 
-** RESPONSIVE DESIGN 
+<h1>RESPONSIVE DESIGN</h1>
 
 1- Desktop-first
 2- Mobile-first
 
-Screen Sizes:
+<h3>Screen Sizes:</h3>#
 
-'max-width:' usses to desktop-first
-'min-width:' uses to mobile-first
+<p><strong>'max-width:' </strong>usses to desktop-first</p>
+<p><strong>'min-width:' </strong>uses to mobile-first</p>
 
 1 for mobile                      0 to 600 px
 1 for portrait tablets            600 to 900 px
