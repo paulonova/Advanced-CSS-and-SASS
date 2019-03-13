@@ -19,6 +19,11 @@
     letter-spacing: 3.5rem;
     /* animation-iteration-count: 3; happen 3 times*/
     /* animation-delay: 2s;  take 2s to start*/  
+
+    @include respond(phone){ 
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub{
@@ -27,6 +32,10 @@
     display: block;
     animation: moveInRight 1s ease-out;
     letter-spacing: 1.74rem;/**/
+
+    @include respond(phone){ 
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -43,6 +52,14 @@
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
+
+  @include respond(tab-port){ 
+    font-size: 3rem;
+  }
+
+  @include respond(phone){ 
+    font-size: 2.5rem;
+  }
 
   &:hover{
     transform: skewY(2deg) skewX(15deg) scale(1.1);

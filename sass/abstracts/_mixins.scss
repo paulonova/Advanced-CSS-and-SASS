@@ -18,14 +18,17 @@
 // Media Query Manager
 
 /*
-0 -     600px     Phone
-600 -   900px:    Tablet portrait
-900 -   1200px:   Tablet landscape
-1200 -  1800px:   Is where our normal style applys
-1800 +            Big desktop
+0 -     600px       Phone
+600 -   900px:      Tablet portrait
+900 -   1200px:     Tablet landscape
+[1200 -  1800px:]   Is where our normal style applys
+1800 +              Big desktop
 
-*max-width:  to desktop first.
-*min-width:  to mobile first
+ORDER:
+Base + typografy > general layout > grid > page layout > components
+
+*max-width:  to desktop first - Starts from the largest screen size to the lower screen size
+*min-width:  to mobile first -  Starts from the lower screen size to the largest screen size
 
 *********************************************
 
@@ -37,6 +40,8 @@ $breakepoint argument choices:
 - big-desk
 
 @content  allows to pass a block of code inside the mixin.
+
+used [em] because it refers to a custom font-size: 16px
 1em = 16px
 */
 
