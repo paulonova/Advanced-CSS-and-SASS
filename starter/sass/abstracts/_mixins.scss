@@ -13,3 +13,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+// Media Query Manager
+
+/*
+0 -     600px     Phone
+600 -   900px:    Tablet portrait
+900 -   1200px:   Tablet landscape
+1200 -  1800px:   Is where our normal style applys
+1800 +            Big desktop
+
+*max-width:  to desktop first.
+*min-width:  to mobile first
+
+*********************************************
+
+$breakepoint argument choices:
+- phone
+- tab-port
+- tab-land
+- the desktop is my current design...
+- big-desk
+
+@content  allows to pass a block of code inside the mixin.
+1em = 16px
+*/
+
+@mixin respond ($breakepoint){
+  @if $breakepoint == phone{
+    @media(max-width: 37.5em){ @content }; //600px
+  }
+  
+  @if $breakepoint == tab-port{
+    @media(max-width: 56.25em){ @content }; //900px
+  }
+
+  @if $breakepoint == tab-land{
+    @media(max-width: 75em){ @content }; //1200 px
+  }
+
+  @if $breakepoint == big-desk{
+    @media(min-width: 112.5em){ @content }; // 1800px
+  }
+}

@@ -1,6 +1,9 @@
 # Advanced-CSS-and-SASS
 Working with an Advanced techniquesin CSS and SASS
 
+
+# Links
+
 <h2>Responsive Grid System:</h2>
 http://www.responsivegridsystem.com/
 
@@ -27,7 +30,7 @@ https://bennettfeely.com/clippy/
 
 
 
-<h1>Project´s annotations</h1>
+# Project´s annotations
 
 
 
@@ -62,8 +65,12 @@ https://bennettfeely.com/clippy/
 <p>This will render the SASS into the css file style.css.</p>
 <p>then write in console:  'npm run scss'</p>
 
-# install globaly =>  'npm install live-server -g'
-# run => 'live-server'
+<h3>In CMD:</h3>
+<p>install globaly =>  'npm install live-server -g'</p>
+<p>run => 'live-server'</p>
+
+<h3>In VS-console:</h3>
+<p>npm run scss    (To transform SASS into CSS)</p>
 
 <h1>GRIDS:</h1>
 
@@ -78,7 +85,7 @@ https://bennettfeely.com/clippy/
 
   'u-center-text', 'u-margin-bottom-8' etc..
 
-<strong>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</strong>
+<strong>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</strong>
 
 <h1>RESPONSIVE DESIGN</h1>
 
