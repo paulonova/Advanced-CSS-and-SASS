@@ -1,3 +1,25 @@
+/*
+0 -     600px     Phone
+600 -   900px:    Tablet portrait
+900 -   1200px:   Tablet landscape
+1200 -  1800px:   Is where our normal style applys
+1800 +            Big desktop
+
+*max-width:  to desktop first.
+*min-width:  to mobile first
+
+*********************************************
+
+$breakepoint argument choices:
+- phone
+- tab-port
+- tab-land
+- the desktop is my current design...
+- big-desk
+
+@content  allows to pass a block of code inside the mixin.
+1em = 16px
+*/
 /*ANIMATIONS */
 /*Animations comes from the left*/
 @keyframes moveInLeft {
@@ -40,8 +62,19 @@
 
 html {
   /* Calculate 10/16 = 0.625 or 62.5% 
-  now 1rem = 62.5% or 10px */
+  now 1rem = 62.5% or 10px 
+  1 rem = 10px;  10px/16px = 62.5%
+  */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 70%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 /*To be used in inheritence*/
 body {
