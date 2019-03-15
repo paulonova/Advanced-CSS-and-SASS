@@ -84,9 +84,21 @@
 
             <div class="col-1-of-2">
               <div class="composition">
-                <img src="img/nat-1-large.jpg" class="composition__photo composition__photo--p1" alt="photo1"/>
-                <img src="img/nat-2-large.jpg" class="composition__photo composition__photo--p2" alt="photo3"/>
-                <img src="img/nat-3-large.jpg" class="composition__photo composition__photo--p3" alt="photo2"/>
+                <!--scr only in case of incomatibility of browsers-->
+                <img srcset="img/nat-1-large.jpg 1000w, img/nat-1.jpg 300w"
+                      src="img/nat-1-large.jpg"  
+                      sizes="(max-width=56.25em) 20vw, (max-width=37.5em) 30vw, 18.75em" alt="photo 1" 
+                      class="composition__photo composition__photo--p1" alt="photo1"/>
+
+                <img srcset="img/nat-2-large.jpg 1000w, img/nat-2.jpg 300w" 
+                      src="img/nat-2-large.jpg"
+                      sizes="(max-width=56.25em) 20vw, (max-width=37.5em) 30vw, 18.75em" alt="photo 2" 
+                      class="composition__photo composition__photo--p2" alt="photo3"/>
+
+                <img srcset="img/nat-3-large.jpg 1000w, img/nat-3.jpg 300w"
+                      src="img/nat-3-large.jpg"
+                      sizes="(max-width=56.25em) 20vw, (max-width=37.5em) 30vw, 18.75em" alt="photo 3" 
+                      class="composition__photo composition__photo--p3" alt="photo2"/>
               </div>
             </div>
           </div><!-- end row-->          
@@ -300,6 +312,7 @@
             <a href="#" class="btn-text">Read all stories &rarr;</a>
           </div>
         </section>
+        
         <!-- Section FORM -->
         <section class="section-book">
           <div class="row">
@@ -352,7 +365,11 @@
 
       <footer class="footer">
         <div class="footer__logo-box">
-          <img src="img/logo-green-2x.png" alt="Footer Logo" class="footer__logo">
+          <picture class="footer__logo">
+            <source media="(max-width: 37.5em)" srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x">
+            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Footer Logo" src="img/logo-green-2x.png"><!--scr only in case of incomatibility of browsers-->
+          </picture>
+          <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Footer Logo" > -->
         </div>
 
         <div class="row">
@@ -396,10 +413,7 @@
             sodales ut. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Amet dictum 
             sit amet justo donec enim diam vulputate. Amet risus nullam eget felis. Neque laoreet 
             suspendisse interdum consectetur libero id faucibus nisl tincidunt. Id volutpat lacus 
-            laoreet non curabitur gravida arcu ac. Ac turpis egestas integer eget aliquet. 
-            Fermentum leo vel orci porta non pulvinar neque laoreet. Eleifend mi in nulla posuere 
-            sollicitudin aliquam ultrices sagittis orci. Semper risus in hendrerit gravida rutrum 
-            quisque. Neque volutpat ac tincidunt vitae. Volutpat odio facilisis mauris sit amet 
+            laoreet non curabitur gravida arcu ac. Ac turpis egestas integer eget aliquet.
             massa vitae tortor condimentum.</p>
             <a href="#" class="btn btn--green">Book now!</a>
           </div>

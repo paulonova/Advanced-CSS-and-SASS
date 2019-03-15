@@ -62,3 +62,55 @@ Screen Sizes:
 ps: That can be more, but these are the basics.
 
 
+** RESPONSIVE IMAGES in HTML
+
+1- srcset attribute in <img> and <source>
+2- Use <picture>
+3- Media Queries in html
+
+<img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Footer Logo" class="footer__logo">
+'srcset' change the image resolution depending on screen resolution, 'lower-res => 1x'  and 'higher-res => 2x'
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+Density and Resolution:
+'<picture>' Is possible to specify more then one source for the pictures in different screen sizes.
+            1x = low resolution
+            2x = hight resolution
+            ** The browser choose authomatic
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers-1x.jpg 1x, img_pink_flowers-2x.jpg 2x">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+
+
+** RESPONSIVE IMAGES in CSS
+
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 112.5em){}
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** Testing for Browser Support with '@supports'
+
+Possible to implement differents fitures in diferents browsers '(Chrome, Safari, Firefox, etc.)'
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** Setting up a Simple Build Process with NPM Scripts
+
+Install:  'npm install concat --save-dev'
+
+"scripts": {
+    "watch:sass": "node-sass --watch sass/main.scss css/style.css",
+    "compile:sass": "node-sass --watch sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"  ==> To mix two or more css files in one.
+  },
+
+Install: 
+  'npm install autoprefixer --save-dev'
+  'npm install postcss-cli --save-dev'
+

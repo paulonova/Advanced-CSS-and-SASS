@@ -29,11 +29,18 @@
     height: 15rem;
     background-color: orangered;
     float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);//require float and dimensions..
-    shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) translateY(-2.5rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+      -webkit-shape-outside: circle(50% at 50% 50%);//require float and dimensions..
+      shape-outside: circle(50% at 50% 50%);    
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      width: 15rem;
+      height: 15rem;
+    }
 
     @include respond(tab-port){
       transform: translateX(-3rem) translateY(0) skewX(0);

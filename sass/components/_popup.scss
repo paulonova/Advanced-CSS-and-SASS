@@ -10,6 +10,15 @@
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+
+  
+  
+  @suports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)){
+    //new fiture, don´t work in Chrome
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
   
   &__content{
     @include centerVerticalAndHorizontal;
@@ -41,9 +50,10 @@
     width: 100%;
   }
 
+
   &__text{
     font-size: 1.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     -moz-column-count: 2;
     -moz-column-gap: 4rem; // 1em = 14px or 1.4rem
     -moz-column-rule: 1px solid $color-gray-light-2;
